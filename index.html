@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Batchu Reshmi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary: #0ea5a4;
+      --secondary: #0b83f5;
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #fff;
+      --shadow: 0 8px 24px rgba(0,0,0,0.08);
+      --radius: 16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+
+    /* Navbar */
+    nav{position:fixed;top:0;left:0;width:100%;background:rgba(255,255,255,0.95);box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center;padding:0.8rem 2rem;z-index:100}
+    .nav-brand{font-weight:700;font-size:1.2rem;color:var(--primary)}
+    .nav-links{display:flex;gap:1.5rem}
+    .nav-links a{color:var(--muted);font-weight:500;transition:.3s}
+    .nav-links a:hover{color:var(--primary)}
+    .btn{background:var(--primary);color:#fff;padding:0.6rem 1rem;border-radius:var(--radius);font-weight:600;transition:.3s}
+    .btn:hover{background:var(--secondary)}
+
+    /* Sections */
+    section{padding:5rem 2rem;max-width:1100px;margin:auto}
+    h2{font-size:2rem;margin-bottom:1rem;color:var(--primary)}
+
+    /* Hero */
+    #home{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center}
+    #home h1{font-size:2.5rem;margin-bottom:1rem}
+    #home p{color:var(--muted);max-width:600px;margin-bottom:2rem}
+    #home .socials{display:flex;gap:1rem}
+    #home .socials a{font-size:1.2rem;color:var(--primary);transition:.3s}
+    #home .socials a:hover{color:var(--secondary)}
+
+    /* Cards */
+    .card{background:var(--card);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);transition:.3s}
+    .card:hover{transform:translateY(-4px)}
+
+    /* Skills */
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-top:1.5rem}
+    .skill{padding:0.8rem;background:#f1f5f9;border-radius:var(--radius);text-align:center;font-weight:600;color:var(--text);transition:.3s}
+    .skill:hover{background:var(--primary);color:#fff}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:1.5rem}
+    .project img{width:100%;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .project h3{margin:0.5rem 0}
+    .project a{font-size:0.9rem;color:var(--primary);margin-right:1rem}
+
+    /* Certifications */
+    .cert-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.5rem}
+    .cert{background:#f1f5f9;padding:1rem;border-radius:var(--radius);font-size:0.9rem}
+
+    /* Contact */
+    form{display:flex;flex-direction:column;gap:1rem;max-width:500px;margin:auto}
+    input,textarea{padding:0.8rem;border-radius:var(--radius);border:1px solid #d1d5db}
+    textarea{resize:none}
+    footer{text-align:center;padding:2rem;color:var(--muted)}
+
+    /* Responsive */
+    @media(max-width:768px){
+      nav{flex-direction:column;align-items:flex-start;gap:1rem}
+      .nav-links{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-brand">Batchu Reshmi</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="reshmi_resume.pdf" download class="btn">Download Resume</a>
+  </nav>
+
+  <section id="home">
+    <h1>Hi, I'm Batchu Reshmi</h1>
+    <p>Motivated BCA final-year student with strong skills in web development, communication, and teamwork. Seeking opportunities to contribute and grow in professional environments.</p>
+    <div class="socials">
+      <a href="mailto:batchureshmi@gmail.com">📧</a>
+      <a href="https://www.linkedin.com/in/reshmi-batchu/" target="_blank">🔗</a>
+      <a href="https://github.com/Reshmi-batchu" target="_blank">💻</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>Available for internships and full-time roles • Fluent in English & Telugu • Interested in Web Development and Cloud Computing.</p>
+      <h3>Education</h3>
+      <ul>
+        <li><b>BCA</b> — Aditya Degree College, Eluru (2023–26) — CGPA: 8.9</li>
+        <li>Intermediate — AP Open School Society (2022) — 76%</li>
+        <li>SSC — Sri Deepthi E.M. High School, Eluru (2020) — 98%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Python</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express.js</div>
+      <div class="skill">React (learning)</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects & Internships</h2>
+    <div class="projects">
+      <div class="card project">
+        <img src="images/weather.png" alt="Weather Dashboard"/>
+        <h3>Weather Dashboard</h3>
+        <p>Dynamic weather dashboard using OpenWeatherMap API and Geolocation.</p>
+        <a href="https://github.com/Reshmi-batchu/dynamic-weather-dashboard" target="_blank">Repo</a>
+        <a href="https://reshmi-batchu.github.io/dynamic-weather-dashboard/" target="_blank">Demo</a>
+      </div>
+      <div class="card project">
+        <img src="images/todo.png" alt="To-Do App"/>
+        <h3>To-Do App</h3>
+        <p>Responsive task manager with add/delete and persistence.</p>
+      </div>
+    </div>
+    <h3 style="margin-top:2rem">Internships</h3>
+    <ul>
+      <li><b>IBM SkillsBuild – Edunet</b> (2025) — Frontend Development Internship</li>
+      <li><b>Adhoc Networks</b> (2025) — MERN Stack Internship</li>
+      <li><b>Deloitte Australia Technology Virtual Internship</b> (2025)</li>
+    </ul>
+  </section>
+
+  <section id="certs">
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert">Deloitte Australia Technology Virtual Internship (2025)</div>
+      <div class="cert">Full Stack Development – GeeksforGeeks</div>
+      <div class="cert">Python Essentials 1 & 2 – Cisco</div>
+      <div class="cert">Red Hat Certified Python Programmer</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Batchu Reshmi | Built with ❤</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
